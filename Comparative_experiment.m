@@ -66,7 +66,7 @@ xiankuan = 2;
 
 for t = 0:period:terminal
     aaa = t ;
-% V0加速度选择
+% V0录脫脣脵露脠脩隆脭帽
     if    t > 30
        a0 = 0 ;
     elseif t>0 && t<= 5 
