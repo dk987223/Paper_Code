@@ -191,10 +191,6 @@ end
     aaaa = aaaa+1;
 end
 
-% legend('')
-% xlabel('time(s)')
-% ylabel('')
-
 
 t = 0:period:terminal;
 
