@@ -65,7 +65,7 @@ xiankuan = 2;
 
 for t = 0:period:terminal
     aaa = t ;
-% V0¼ÓËÙ¶ÈÑ¡Ôñ
+
     if    t > 30
        a0 = 0 ;
     elseif t>0 && t<= 5 
