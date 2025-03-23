@@ -136,23 +136,7 @@ end
        adp_wwwi = adp_wwwi + dwwwi*period;
        
  
-%         for i = 1:6
-%            Siinte =  abs(Si) * period + Siinte ;      
-%            if  i == 1
-% %               u(6) = 1/hi*(vi(5)-vi(6))+(ri*Siinte(6)+yi(6))*tanh(Si(6)/ei)+(1/(q*hi))*(q*langda*exi(6)+k/(2*q*hi)*Si(6));
-%                 u(6) = (W_rad/eff)*(mi*(k*Si(6)+q*Ri(6)*langda*wi(6))/(q*Ri(6)*(2*p0*vi(6)+p1)) + mi*(vi(5)-vi(6))/(2*p0*vi(6)+p1) - mi*exi(6)*dro1/(2*p0*vi(6)+p1)/ro+adp_C(6)*vi(6)^2+mi*g*adp_f(6) + (gou*Siinte(6)+adp_y(6))*tanh(Si(6)./0.1));
-%            elseif i > 1 && i < 6
-% %               u(7-i) = 1/hi*(vi(7-i-1)-vi(7-i))+(ri*Siinte(7-i)+yi(7-i))*tanh(Si(7-i)/ei)+(1/q*hi)*(q*langda*exi(7-i)-(vi(7-i)-vi(7-i+1)-hi*(u(7-i+1)+fi(7-i+1)))-langda*exi(7-i+1))+k/(2*q*hi)*Si(7-i); 
-%   u(7-i)=(W_rad/eff)*( mi/(q*Ri(7-i)*(2*p0*vi(7-i)+p1))*(k*Si(7-i)+q*Ri(7-i)*langda*wi(7-i)-Ri(7-i+1)*(vi(7-i)-vi(7-i+1)-(2*p0*vi(7-i+1)+p1)/mi*((eff/W_rad)*u(7-i+1)-...
-%   ci*vi(7-i+1)^2-mi*g*fi-fi_1(7-i+1))-mi*exi(7-i+1)*dro1/ro)-langda*wi(7-i+1)  )+mi/(2*p0*vi(7-i)+p1)*(vi(7-i-1)-vi(7-i)) - mi*exi(7-i)*dro1/(2*p0*vi(7-i)+p1)/ro...  
-%   +adp_C(7-i)*vi(7-i)*vi(7-i) + mi*g*adp_f(7-i) + (gou*Siinte(7-i)+adp_y(7-i))*tanh(Si(7-i)./0.1));  
-%            else  
-% %               u(1) = 1/hi* (v0-vi(1))+(ri*Siinte(1)+yi(1))*tanh(Si(1)/ei)+(1/q*hi)*(q*langda*exi(1)-(vi(1)-vi(2)-hi*(u(2)+fi(2)))-langda*exi(2))+k/(2*q*hi)*Si(1); 
-%     u(1) = (W_rad/eff)*( mi/(q*Ri(1)*(2*p0*vi(1)+p1))*(k*Si(1)+q*Ri(1)*langda*wi(1)-Ri(2)*(vi(1)-vi(2)-(2*p0*vi(2)+p1)/mi*((eff/W_rad)*u(2)-...
-%     ci*vi(2)^2-mi*g*fi-fi_1(2))-mi*exi(2)*dro1/ro)-langda*wi(2))+mi/(2*p0*vi(1)+p1)*(v0-vi(1)) - mi*exi(1)*dro1/(2*p0*vi(1)/ro+p1)...  
-%     +adp_C(1)*vi(1)*vi(1) + mi*g*adp_f(1) + (gou*Siinte(1)+adp_y(1))*tanh(Si(1)./0.1));  
-%            end 
-%       end
+
 
          for i = 1:6
             Siinte =  abs(Si) * period + Siinte ; 
